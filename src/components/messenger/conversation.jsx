@@ -111,7 +111,7 @@ const Conversation = (props) => {
             {
                 console.log("11 props.messages:", props.messages)
             }
-            <Box id="chats-box" className="chats-box" style={{ backgroundImage: `url(${PF}chat-bg-1.webp)` }}>
+            <Box id="chats-box" className="chats-box" style={{ backgroundImage: `url(/chat-bg-1.webp)` }}>
                 {
                     !props.messagesLoading ? (
                         props.messages.length > 0 ? (

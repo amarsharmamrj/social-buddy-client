@@ -21,12 +21,12 @@ const Message = (props) => {
                     props.own ? (
                         <img
                             // style={profileStyle}
-                            src={(props.currentUser.profilePicture == '') ? dummyImage : PF + props.currentUser.profilePicture} alt={props.currentUser.username}
+                            src={(props.currentUser.profilePicture == '') ? dummyImage : PF + props.currentUser.profilePicture} alt=""
                         />
                     ) : (
                         <img
                             // style={profileStyle}
-                            src={(props.user.profilePicture == '') ? dummyImage : PF + props.user.profilePicture} alt={props.user.username}
+                            src={(props.user.profilePicture == '') ? dummyImage : PF + props.user.profilePicture} alt=""
                         />
                     )
                 }

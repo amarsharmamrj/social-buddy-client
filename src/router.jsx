@@ -16,7 +16,8 @@ import { io } from 'socket.io-client'
 
 const Router = () => {
     const { user, dispatch } = useContext(AuthContext)
-    const socket = io("ws://localhost:7000")
+    // const socket = io("ws://localhost:7000")
+    const socket = io(process.env.REACT_APP_SOCKET_SERVICE)
 
     const getNotifications = (receiver) => {
         axios.get(`${process.env.REACT_APP_API_SERVICE}/api/notifications/${receiver}`)
