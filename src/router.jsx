@@ -18,7 +18,7 @@ import { io } from 'socket.io-client'
 const Router = () => {
     const { user, dispatch } = useContext(AuthContext)
     // const socket = io("ws://localhost:7000")
-    const socket = window.io(process.env.REACT_APP_SOCKET_SERVICE)
+    const socket = io(process.env.REACT_APP_SOCKET_SERVICE)
     console.log("@socket:", socket)
 
     const getNotifications = (receiver) => {
