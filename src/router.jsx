@@ -18,6 +18,7 @@ const Router = () => {
     const { user, dispatch } = useContext(AuthContext)
     // const socket = io("ws://localhost:7000")
     const socket = io(process.env.REACT_APP_SOCKET_SERVICE)
+    console.log("@socket:", socket)
 
     const getNotifications = (receiver) => {
         axios.get(`${process.env.REACT_APP_API_SERVICE}/api/notifications/${receiver}`)
