@@ -70,6 +70,7 @@ const Login = () => {
                 navigate("/")
             }, 1000)
         } catch (error) {
+            enqueueSnackbar("Try checking your password or username !", { variant: "error" })
             dispatch({ type: "LOGIN_FAILURE", payload: error })
         }
     }
