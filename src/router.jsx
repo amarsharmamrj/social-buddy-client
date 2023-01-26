@@ -12,8 +12,8 @@ import ViewPost from './pages/viewPost'
 import AllFriends from './pages/allFriends'
 import axios from 'axios'
 import Notifications from './pages/notifications'
-// import { io } from 'socket.io-client'
-import { io } from "https://cdn.socket.io/4.3.2/socket.io.esm.min.js";
+import { io } from 'socket.io-client'
+
 
 const Router = () => {
     const { user, dispatch } = useContext(AuthContext)
